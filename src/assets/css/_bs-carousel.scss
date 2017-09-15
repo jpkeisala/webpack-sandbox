@@ -1,0 +1,39 @@
+.band-image-carousel{
+
+    .carousel-item{   
+        img{
+            width:auto;
+            height:50vh;
+            filter: blur(1px);
+        }
+    }
+}
+
+.band-main-carousel-container{
+    // background: #eeeeee;
+    
+}
+
+form#form-step-uploads{
+    display:flex;
+}
+
+.gallery-thumbs {
+    min-height: 180px;
+    min-width: 180px;
+    padding: 10px;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    position: relative;
+    border: 1px dotted $gray;
+
+    &:hover {
+        background-color: $gray-lighter;
+        border: 1px dotted $gray;
+    }
+}

@@ -1,0 +1,302 @@
+/*!
+ * Bootstrap v4.0.0-beta (https://getbootstrap.com)
+ * Copyright 2011-2017 The Bootstrap Authors
+ * Copyright 2011-2017 Twitter, Inc.
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+ */
+
+@import "../../../node_modules/bootstrap/scss/functions";
+@import "../../../node_modules/bootstrap/scss/variables";
+ // bandspot overwrites
+ @import "custom";
+ 
+@import "../../../node_modules/bootstrap/scss/mixins";
+@import "../../../node_modules/bootstrap/scss/print";
+@import "../../../node_modules/bootstrap/scss/reboot";
+@import "../../../node_modules/bootstrap/scss/type";
+@import "../../../node_modules/bootstrap/scss/images";
+@import "../../../node_modules/bootstrap/scss/code";
+@import "../../../node_modules/bootstrap/scss/grid";
+@import "../../../node_modules/bootstrap/scss/tables";
+@import "../../../node_modules/bootstrap/scss/forms";
+@import "../../../node_modules/bootstrap/scss/buttons";
+@import "../../../node_modules/bootstrap/scss/transitions";
+@import "../../../node_modules/bootstrap/scss/dropdown";
+@import "../../../node_modules/bootstrap/scss/button-group";
+@import "../../../node_modules/bootstrap/scss/input-group";
+@import "../../../node_modules/bootstrap/scss/custom-forms";
+@import "../../../node_modules/bootstrap/scss/nav";
+@import "../../../node_modules/bootstrap/scss/navbar";
+@import "../../../node_modules/bootstrap/scss/card";
+@import "../../../node_modules/bootstrap/scss/breadcrumb";
+@import "../../../node_modules/bootstrap/scss/pagination";
+@import "../../../node_modules/bootstrap/scss/badge";
+@import "../../../node_modules/bootstrap/scss/jumbotron";
+@import "../../../node_modules/bootstrap/scss/alert";
+@import "../../../node_modules/bootstrap/scss/progress";
+@import "../../../node_modules/bootstrap/scss/media";
+@import "../../../node_modules/bootstrap/scss/list-group";
+@import "../../../node_modules/bootstrap/scss/close";
+@import "../../../node_modules/bootstrap/scss/modal";
+@import "../../../node_modules/bootstrap/scss/tooltip";
+@import "../../../node_modules/bootstrap/scss/popover";
+@import "../../../node_modules/bootstrap/scss/carousel";
+@import "../../../node_modules/bootstrap/scss/utilities";
+
+
+// Bandspot
+@import "bs-header";
+@import "bs-snippets";
+@import "bs-forms";
+@import "bs-carousel";
+@import "bs-page";
+@import "bs-band-page";
+
+
+  .container-gradient{
+      background: linear-gradient(0deg, white, #efefef);
+  }
+  
+  // make the demo look nice, not required for your own use.
+  .logo, .logo-small {
+    width: 500px;
+    height: 200px;
+    background: #fff url(../img/bandspot-logo.png) no-repeat;
+    background-size: 500px;
+  }
+  
+  .logo-small {
+    width: 125px;
+    height: 50px;
+    background: #fff url(../img/bandspot-logo.png) no-repeat;
+    background-size: 125px;
+  }
+  
+  .logoB, .logoBandspot {
+    width: 30px;
+    height: 30px;
+    background: transparent url(../img/bandspotb.png) no-repeat;
+    background-size: 30px;
+    background-position: center;
+    
+    
+    h1{visibility:hidden; font-size:1px;}
+  }
+  
+  .logoBandspot {
+    width: 125px;
+    height: 30px;
+    background: #fff url(../img/bandspot-logo.png) no-repeat;
+    background-size: 125px;
+  }
+  
+  h1, h2, h3, p {
+    margin: 0;
+    font-weight: 400;
+  }
+  
+  main {
+    flex: 1 0 auto;
+    justify-content: center;
+    padding: 8vw;
+    
+   
+  }
+  
+  .support {
+    position: fixed;
+    bottom: 24px;
+    color: rgba(black, 0.6);
+  }
+  
+  
+  
+  
+    a.btn-primary, a.btn-primary:link, a.btn-primary:visited, a.btn-primary:hover, a.btn-primary:active{
+      color: #ffffff !important;
+    }
+  
+  .btn-secondary{
+    background-color: $gray-lighter;
+  }
+  
+  .btn-facebook, .btn-email {
+      background-color: #3b5998;
+      border-radius: 1px;
+      width: 100%;
+      color: white;
+      min-width: 220px;
+      min-height: 50px;
+      .fa-facebook-official{
+          margin-right:10px;
+          font-size:20px;
+      }
+  }
+  
+  .btn-email{
+    background-color: $turquoise;
+    
+  }
+  
+  .main-footer{
+    border-top:1px solid #ccc;
+    padding:10px 40px;
+    font-size:small;
+  display:flex;
+  
+  
+  
+  }
+  
+  .settingnavbar{
+    background: $gray-dark;
+  }
+  
+  .bg-alert{
+      padding: .5rem;
+      margin-top: .5rem;
+      margin-bottom: .5rem;
+  }
+  
+  .bg-notification {
+      padding: .5rem;
+  }
+  
+  .bg-alert-fade{
+    opacity: 0;
+    transition: opacity 2s ease-in;
+  }
+  
+  h1, h2, h3{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+  
+  .small{
+    font-size:$font-size-xs;
+  }
+  
+  /*----------------------------
+      The file upload form - original css
+  -----------------------------*/
+  #upload {
+   
+      background-color: $gray-light;
+   
+      width: 250px;
+      padding: 30px;
+      border-radius: 3px;
+      margin: 200px auto 100px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  }
+  
+  #drop {
+      background-color: $gray-lighter;
+      padding: 40px 50px;
+      margin-bottom: 30px;
+      border: 20px solid rgba(0, 0, 0, 0);
+  
+   
+      text-align: center;
+      text-transform: uppercase;
+      font-size: 16px;
+      font-weight: bold;
+      color: #7f858a;
+      border:1px dotted $gray;
+  }
+  
+  #drop a {
+      background-color: $gray-light;
+      padding: 12px 26px;
+      color: #fff;
+      font-size: 14px;
+    
+      cursor: pointer;
+      display: inline-block;
+      margin-top: 12px;
+      line-height: 1;
+  }
+  
+  #drop a:hover {
+      background-color: theme-color("primary")
+  }
+  
+  #drop input {
+      display: none;
+  }
+  
+  #upload ul {
+      list-style: none;
+      margin: 0 -30px;
+      border-top: 1px solid #2b2e31;
+      border-bottom: 1px solid #3d4043;
+  }
+  
+  #upload ul li {
+      background-color: #333639;
+      background-image: -webkit-linear-gradient(to top, #333639, #303335);
+      background-image: -moz-linear-gradient(to top, #333639, #303335);
+      background-image: linear-gradient(to top, #333639, #303335);
+      border-top: 1px solid #3d4043;
+      border-bottom: 1px solid #2b2e31;
+      padding: 15px;
+      height: 52px;
+      position: relative;
+  }
+  
+  #upload ul li input {
+      display: none;
+  }
+  
+  #upload ul li p {
+      width: 144px;
+      overflow: hidden;
+      white-space: nowrap;
+      color: #EEE;
+      font-size: 16px;
+      font-weight: bold;
+      position: absolute;
+      top: 20px;
+      left: 100px;
+  }
+  
+  #upload ul li i {
+      font-weight: normal;
+      font-style: normal;
+      color: #7f7f7f;
+      display: block;
+  }
+  
+  #upload ul li canvas {
+      top: 15px;
+      left: 32px;
+      position: absolute;
+  }
+  
+  #upload ul li span {
+      width: 15px;
+      height: 12px;
+    //   background: url('../img/icons.png') no-repeat;
+      position: absolute;
+      top: 34px;
+      right: 33px;
+      cursor: pointer;
+  }
+  
+  #upload ul li.working span {
+      height: 16px;
+      background-position: 0 -12px;
+  }
+  
+  #upload ul li.error p {
+      color: red;
+  }
+  /*----------------------------
+      End of file upload original css form
+  -----------------------------*/
+  
+  /* Google place autocomplete fix for modal */
+  .pac-container{
+      z-index: 1100;
+  }
+  

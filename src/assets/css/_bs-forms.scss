@@ -1,0 +1,68 @@
+ .form-login-username, .form-login-password{
+     margin:10px 0;
+     height:80px;
+ }
+
+.input-validation-error, input-validation-error:focus {
+    border: 2px solid red;
+}
+
+.form{ 
+    input, textarea, button{
+        margin-top:30px;
+    }
+
+    .btn-default:hover{
+        background-color: $gray-lighter;
+    }
+}
+
+.form-date {
+    width: 150px !important;
+}
+
+.btn {
+    cursor: pointer;
+}
+
+
+
+.search-filters{
+    display: flex;
+    flex-wrap: wrap;
+    flex-wrap: wrap;
+    box-shadow: 0 1px 3px 0px rgba(0, 0, 0, 0.08) !important;
+    height:50px;
+    
+
+    input, select{
+    font-size: $font-size-sm;
+    letter-spacing: 0.2px !important;
+    color: #484848;
+    padding: 10px;
+    text-overflow: ellipsis !important;
+    border: 1px solid #e4e4e4;
+    border-radius: 4px;
+    cursor: pointer;
+    height:50px;
+    }
+    select.form-control:not([size]):not([multiple]){
+    height:50px;
+    }
+
+    .form-control.left{
+        border-right: 0;
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
+        
+    }
+     .form-control.inside{
+        border-radius: 0;
+    }
+     .form-control.right{
+        border-left: 0;
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
+    }
+}
+
